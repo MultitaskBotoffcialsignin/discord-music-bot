@@ -119,7 +119,7 @@ async function playNext(guildId) {
 }
 
 async function findTrack(query) {
-  if (play.yt_validate(query) === "yt_video") {
+  if (play.yt_validate(query) === "video") {
     const info = await play.video_basic_info(query);
     return {
       title: info.video_details.title,
